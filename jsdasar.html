@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .menu-container {
+            max-width: 1300px;
+            height: 85vh;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+
+    <title>ARKATAMAKU</title>
+</head>
+<body>
+      <!-- NAVBAR  -->
+      <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">FSWD3_FARRELAGIA</a></h1>
+            <ul class="nav-links">
+                <li class="dropdown">
+                  <a href="#">Tugas <i data-feather="chevron-down"></i></a>
+                  <ul class="dropdown-content">
+                      <li><a href="form.html">Formulir</a></li>
+                      <li><a href="jsdasar.html">JS Dasar</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="menu-container">
+        <h1 style="text-align: center; padding: 2rem;">Fundamental Operator JavaScript</h1>
+
+    <!-- Tombol untuk Operator Boolean -->
+    <button onclick="runBooleanExample()">Operator Boolean</button>
+    <br><br>
+
+    <!-- Tombol untuk If Else Statement -->
+    <button onclick="runIfElseExample()">If Else Statement</button>
+    <br><br>
+
+    <!-- Tombol untuk Looping dengan for -->
+    <button onclick="runForLoopExample()">Looping dengan for</button>
+    <br><br>
+
+    <!-- Tombol untuk Looping dengan while -->
+    <button onclick="runWhileLoopExample()">Looping dengan while</button>
+    <br><br>
+
+    <!-- Tombol untuk Looping dengan do while -->
+    <button onclick="runDoWhileLoopExample()">Looping dengan do while</button>
+    <br><br>
+
+    <!-- Output akan muncul di sini -->
+    <div id="output">
+        
+    </div>
+
+    </div>
+    
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-icons">
+              <p>&copy; 2024 Landing Page. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fungsi untuk menjalankan contoh Operator Boolean
+        function runBooleanExample() {
+            var isRaining = true;
+            var isSunny = false;
+            document.getElementById("output").innerHTML = "Apakah sedang hujan? " + isRaining + "<br>";
+            document.getElementById("output").innerHTML += "Apakah sedang cerah? " + isSunny;
+        }
+
+        // Fungsi untuk menjalankan contoh If Else Statement
+        function runIfElseExample() {
+            var time = 14;
+            if (time < 12) {
+                document.getElementById("output").innerHTML = "Selamat pagi!";
+            } else {
+                document.getElementById("output").innerHTML = "Selamat siang!";
+            }
+        }
+
+        // Fungsi untuk menjalankan contoh Looping dengan for
+        function runForLoopExample() {
+            var output = "Looping dengan for:<br>";
+            for (var i = 0; i < 5; i++) {
+                output += "Iterasi ke-" + (i + 1) + "<br>";
+            }
+            document.getElementById("output").innerHTML = output;
+        }
+
+        // Fungsi untuk menjalankan contoh Looping dengan while
+        function runWhileLoopExample() {
+            var output = "Looping dengan while:<br>";
+            var j = 0;
+            while (j < 5) {
+                output += "Iterasi ke-" + (j + 1) + "<br>";
+                j++;
+            }
+            document.getElementById("output").innerHTML = output;
+        }
+
+        // Fungsi untuk menjalankan contoh Looping dengan do while
+        function runDoWhileLoopExample() {
+            var output = "Looping dengan do while:<br>";
+            var k = 0;
+            do {
+                output += "Iterasi ke-" + (k + 1) + "<br>";
+                k++;
+            } while (k < 5);
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
