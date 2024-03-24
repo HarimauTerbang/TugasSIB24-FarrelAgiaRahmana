@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    
-    <title>ARKATAMAKU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css">
+
+  <title>ARKATAMAKU</title>
 </head>
+
 <body>
-  <!-- NAVBAR  -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo"><a href="index.html">FSWD3_FARRELAGIA</a></h1>
-            <ul class="nav-links">
-                <li class="dropdown">
-                  <a href="#">Tugas <i data-feather="chevron-down"></i></a>
-                  <ul class="dropdown-content">
-                      <li><a href="form.html">Formulir</a></li>
-                      <li><a href="jsdasar.html">JS Dasar</a></li>
-                  </ul>
-              </li>
+  <div class="container">
+    <nav>
+      <div class="nav__logo">FSWD3_FARREL AGIA</div>
+      <ul class="nav__links">
+        <li class="link"><a href="index.html">Beranda</a></li>
+        <li class="link dropdown">
+            <a href="#" class="dropdown__toggle">Daftar Tugas</a>
+            <ul class="dropdown__menu">
+              <li><a href="productapi.html">Product API</a></li>
+              <li><a href="login-responsive.html">Responsive Form</a></li>
             </ul>
-        </div>
+          </li>
+        <li class="link"><a href="#">Tentang Saya</a></li>
+      </ul>
+      <!-- <button class="btn">LOGIN</button> -->
     </nav>
-
-  <!-- CAROUSEL  -->
-  <div class="carousel-container">
-    <div class="carousel">
-      <img src="https://images.unsplash.com/photo-1546900703-cf06143d1239?q=80&w=2050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nature Image">
-      <img src="https://images.unsplash.com/photo-1503437313881-503a91226402?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nature Image">
-    </div>
-    <button class="prev-button"><img src="img/arrow-left.svg" alt=""></button>
-    <button class="next-button"><img src="img/arrow-right.svg" alt=""></button>
-  </div>
-  
-
-    <!-- FOOTER  -->
-    <footer class="footer">
-      <div class="container">
-          <div class="footer-icons">
-            <p>&copy; 2024 Landing Page. All rights reserved.</p>
-          </div>
+    <header class="header">
+      <div class="content">
+        <h1><span>Get Quick</span></h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste numquam perspiciatis autem necessitatibus ratione accusantium adipisci, magnam similique dignissimos distinctio vero eligendi ipsam, natus voluptatibus labore exercitationem alias nihil possimus!
+        </p>
+        <button class="btn">GET START</button>
       </div>
-  </footer>
-
-  <script src="main.js"></script>
+      <div class="image" id="header_Image" onclick="zoomOut()">
+        <img class="header__image" src="https://img.freepik.com/free-vector/flat-business-employees-meeting-teamwork-training-teaching_88138-990.jpg?t=st=1710398023~exp=1710401623~hmac=aebc6a04047f8b1bea4c479297876b641c9d47a598e5a149f2b9d4e77dcddbb1&w=1380" alt="header image">
+      </div>
+    </header>
+  </div>
 </body>
 </html>
+
+<script src="script.js"></script>
